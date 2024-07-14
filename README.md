@@ -11,10 +11,10 @@ This is a customizable blogging system created with React.js and Firebase. It in
 It uses Firestore Database, Firebse Authentication and Firestore Storage.
 
 ##How to install?
-git clone https://github.com/AtakanYigit/React-Firebase-Custom-Blogging-System.git
-cd React-Firebase-Custom-Blogging-System
-npm i
-npm run dev
+- git clone https://github.com/AtakanYigit/React-Firebase-Custom-Blogging-System.git
+- cd React-Firebase-Custom-Blogging-System
+- npm i
+- npm run dev
 
 ##Example Images
 ![1_E9beXdjZNs4wHoGZy51nNg](https://github.com/user-attachments/assets/e7c42cb4-a75c-4f8e-a902-b23e187e9784)

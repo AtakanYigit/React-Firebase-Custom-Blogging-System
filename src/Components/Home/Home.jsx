@@ -2,7 +2,7 @@ import {collection, query, orderBy, getDocs} from "firebase/firestore";
 import {useLayoutEffect, useState}           from "react";
 import {db}      from "../../Firebase";
 import {Link}    from "react-router-dom";
-import PostImage from "./PostImage";
+import PostImage from "../Post/PostImage";
 import "./Home.scss";
 
 const Home = () => {

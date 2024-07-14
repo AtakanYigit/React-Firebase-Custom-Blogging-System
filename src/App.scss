@@ -1,0 +1,70 @@
+:root{
+    --background:               #FFFFFF;
+    --primary:                  #5237ce;
+    --secondary:                #f18900;
+    --black:                    #121212;
+    --white:                    #F5F5F5;
+    --text-light:               #F5F5F5;
+    --text-dark:                #121212;
+    --input-background:         #1B1B1B;
+}
+
+html, body, #roo{
+    width:                      100vw;
+    max-width:                  100vw;
+    position:                   relative;     
+    overflow-x:                 hidden;
+    min-height:                 100vh;
+    -webkit-tap-highlight-color:transparent;
+}
+
+.app{
+    touch-action:               manipulation;
+    touch-action:               pan-x pan-y;
+    display:                    flex;
+    flex-direction:             column;
+    align-items:                center;
+    justify-content:            flex-start;
+    background-color:           var(--background);
+    gap:                        40px;
+
+    @media screen and (max-width: 768px){
+        gap:                    32px;
+    }
+
+    @media screen and (max-width: 425px){
+        gap:                    16px;
+    }
+}
+
+.notAllowed{
+    cursor:                     not-allowed;
+    opacity:                    .3;
+}
+
+p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, a::-moz-selection, img::-moz-selection, span::-moz-selection, br::-moz-selection, input::-moz-selection, textarea::-moz-selection, button::-moz-selection{
+    color:                  var(--text-light);
+    background:             var(--secondary);
+}
+  
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, a::selection, img::selection, input::selection, span::selection, br::selection, input::selection, textarea::selection, button::selection{
+    color:                  var(--text-dark);
+    background:             var(--secondary);
+}
+
+::-webkit-scrollbar{
+    width:                  10px;
+}
+  
+::-webkit-scrollbar-track{
+    background:             var(--white);
+}
+  
+::-webkit-scrollbar-thumb{
+    background:             var(--secondary);
+    border-radius:          200px;
+}
+  
+::-webkit-scrollbar-thumb:hover{
+    background:             #8158e2;
+}

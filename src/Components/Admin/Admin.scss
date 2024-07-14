@@ -1,0 +1,111 @@
+.admin{
+    padding:            80px 64px;
+    display:            flex;
+    flex-direction:     column;
+    align-items:        center;
+    min-height:             100vh;
+    background-color:   #000000;
+
+    h1{
+        color:              #ffffff;
+        font-size:          2.5rem;
+        font-weight:        600;
+        margin-bottom:      16px;
+    }
+
+    h2{
+        color:              #ffffff;
+        font-size:          2rem;
+        font-weight:        500;
+        margin-Top:         32px;
+        margin-bottom:      16px;
+    }
+
+    form{
+        display:            flex;
+        flex-direction:     column;
+        justify-content:    center;
+        align-items:        center;
+        margin-top:         2rem;
+        width:              60%;
+
+        p{
+            color:              #ffffff;
+            font-size:          1.5rem;
+            font-weight:        500;
+            margin-bottom:      16px;
+            opacity:            0.7;
+        }
+
+        .addButton{
+            position:           relative;
+            top:                -48px;
+            right:              -120px;
+            cursor:             pointer;
+        }
+
+        .deleteButton{
+            cursor:             pointer;
+        }
+
+        .contentContainer{
+            display:            flex;
+            flex-direction:     column;
+            justify-content:    center;
+            align-items:        center;
+            margin-top:         32px;
+            width:              100%;
+
+            &:first-of-type{
+                margin-top:         -16px;
+            }
+        }
+
+        input, textarea, select{
+            margin-bottom:      1rem;
+            width:              calc(100% - 48px);
+            background-color:   #1a1a1a;
+            color:              #ffffff;
+            border:             4px solid #c490ff00;
+            font-size:          2rem;
+            padding:            12px 24px;
+            border-radius:      12px;
+            transition:         all 0.3s ease;
+            outline:            4px solid #000000;
+
+            &:focus{
+                border:             4px solid var(--primary);
+            }
+        }
+        //Disable autofill color
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px #1a1a1a inset;
+            -webkit-text-fill-color: #ffffff;
+        }
+
+        input[type="submit"]{
+            padding:            12px 24px;
+            border:             none;
+            border-radius:      5px;
+            width:              100%;
+            color:              #FFF;
+            background-color:   var(--primary);
+            cursor:             pointer;
+        }
+
+        .horizontal{
+            display:            flex;
+            justify-content:    space-between;
+            width:              100%;
+            gap:                32;
+
+            select{
+                width:              94%;
+            }
+            img{
+                align-self: center;
+                width:             4%;
+            }
+        }
+    }
+}

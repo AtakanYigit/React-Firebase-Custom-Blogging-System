@@ -1,0 +1,52 @@
+.adminLogin{
+    display:            flex;
+    flex-direction:     column;
+    justify-content:    center;
+    align-items:        center;
+    height:             100vh;
+    background-color:   #000000;
+
+    .loginForm{
+        display:            flex;
+        flex-direction:     column;
+        justify-content:    center;
+        align-items:        center;
+        margin-top:         2rem;
+        width:              60%;
+
+        h1{
+            color:              #ffffff;
+            font-size:          3rem;
+            font-weight:        600;
+            margin-bottom:      2rem;
+            margin-top:         -64px;
+        }
+
+        input{
+            margin-bottom:      1rem;
+            border:             none;
+            border-radius:      5px;
+            width:              calc(100% - 48px);
+            background-color:   #1a1a1a!important;
+            color:              #ffffff;
+            font-size:          2rem;
+            padding:            12px 24px!important;
+            border-radius:      8px;
+        }
+        //Disable autofill color
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px #1a1a1a inset;
+            -webkit-text-fill-color: #ffffff;
+        }
+
+        input[type="submit"]{
+            padding:            0.5rem;
+            border:             none;
+            border-radius:      8px;
+            width:              100%;
+            color:              #FFF;
+            background-color:   var(--primary)!important;
+            cursor:             pointer;
+        }
+    }
+}

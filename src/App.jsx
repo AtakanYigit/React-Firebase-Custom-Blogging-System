@@ -1,5 +1,6 @@
 import React, {Suspense} from "react";
 import {Routes, Route}   from "react-router-dom";
+import {app}             from "./Firebase";
 const AdminLogin = React.lazy(() => import("./Components/AdminLogin/AdminLogin"));
 const AdminCheck = React.lazy(() => import("./Components/Admin/AdminCheck"));
 const Home       = React.lazy(() => import("./Components/Home/Home"));
@@ -11,11 +12,11 @@ const App = () =>{
     return (
         <Suspense fallback = {<Error/>}>
             <Routes>
-                <Route path = "/"                           element = {<Home/>}/>
-                <Route path = "/AdminLogin"                 element = {<AdminLogin/>}/>
-                <Route path = "/Admin"                      element = {<AdminCheck/>}/>
-                <Route path = "/Blog/Post/:param"           element = {<Post/>}/>
-                <Route path = "*"                           element = {<Error/>}/>
+                <Route path = "/"                 element = {<Home/>}/>
+                <Route path = "/AdminLogin"       element = {<AdminCheck/>}/>
+                <Route path = "/Admin"            element = {<AdminCheck/>}/>
+                <Route path = "/Blog/Post/:param" element = {<Post/>}/>
+                <Route path = "*"                 element = {<Error/>}/>
             </Routes>
         </Suspense>
     );

@@ -9,6 +9,7 @@ This is a customizable blogging system created with React.js and Firebase. It in
 - Authentication System and more.
 
 It uses Firestore Database, Firebse Authentication and Firestore Storage.
+This is an open-source project, feel free to contribute and/or contact me.
 
 ## How to install?
 ```

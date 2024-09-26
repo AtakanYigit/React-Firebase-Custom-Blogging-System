@@ -1,5 +1,5 @@
 # React Firebase Custom Blogging System
-This is the Github repository for my article on Medium named "How to Create a Custom Blogging System Using React and Firebase)" You can read it here ---> [Article Link]
+This is the Github repository for my article on Medium named "How to Create a Custom Blogging System Using React and Firebase)" You can read it here ---> [https://blog.kleinpixelagency.com/custom-blogging-system-with-react-and-firebase-4a1b1f50aa54](https://blog.kleinpixelagency.com/custom-blogging-system-with-react-and-firebase-4a1b1f50aa54)
 
 ## What Does This Do?
 This is a customizable blogging system created with React.js and Firebase. It includes
